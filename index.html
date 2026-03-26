@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Lean Ops — Operations Consulting for Blockchain & AI Companies</title>
+  <meta name="description" content="Milan Ilić is an operations consultant helping Blockchain, Web3, DeFi, and AI companies cut through complexity. Fractional COO, process simplification, operational clean-ups, and AI integration." />
+  <meta name="keywords" content="operations consultant blockchain, fractional COO web3, AI startup operations, DeFi operations support, crypto company restructuring, web3 fractional operations, blockchain operations consulting, AI operations integration" />
+  <meta name="author" content="Milan Ilić" />
+  <link rel="canonical" href="https://www.leanops.xyz/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.leanops.xyz/" />
+  <meta property="og:title" content="Lean Ops — Operations Consulting for Blockchain & AI Companies" />
+  <meta property="og:description" content="Practical operational support for Blockchain, Web3, DeFi, and AI companies navigating complexity. Hands-on, no-fluff, built for founders." />
+  <meta property="og:image" content="https://www.leanops.xyz/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lean Ops — Operations Consulting for Blockchain & AI Companies" />
+  <meta name="twitter:description" content="Practical operational support for Blockchain, Web3, DeFi, and AI companies navigating complexity." />
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Lean Ops",
+    "url": "https://www.leanops.xyz",
+    "email": "hello@leanops.xyz",
+    "description": "Operations consulting for Blockchain, Web3, DeFi, and AI companies. Fractional COO, process simplification, cost reviews, and operational clean-ups.",
+    "founder": {
+      "@type": "Person",
+      "name": "Milan Ilić",
+      "jobTitle": "Operations Consultant",
+      "sameAs": [
+        "https://www.linkedin.com/in/ilicmilan/",
+        "https://t.me/ilic013"
+      ]
+    },
+    "areaServed": "Worldwide",
+    "serviceType": [
+      "Operations Consulting",
+      "Fractional COO",
+      "Process Simplification",
+      "AI Integration",
+      "Organizational Restructuring"
+    ]
+  }
+  </script>
+
+  <!-- FAQ Schema for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What kind of companies does Lean Ops work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Primarily blockchain, Web3, DeFi, and AI product companies — from early-stage startups to organizations with 100–500+ employees. Most useful when operational complexity is outpacing internal capacity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Milan Ilić a fractional COO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sometimes that's the right label, sometimes not. Engagements range from short-term project-based work to ongoing advisory or embedded part-time support during a specific transition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Lean Ops available for full-time roles?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Occasionally, for the right company and challenge. Full-time means exclusive attention — one team, one mission, fully committed."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #4a9eff;
+      --blue-light: #6db3ff;
+      --bg: #0a0a0a;
+      --bg-card: #0f0f0f;
+      --bg-card-hover: #141414;
+      --text-primary: #f0ede6;
+      --text-secondary: #888;
+      --text-muted: #4a4a48;
+      --border: rgba(255,255,255,0.07);
+      --border-card: rgba(255,255,255,0.08);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: #e8e6e0;
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 48px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+    .logo span { color: var(--blue); }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 14px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text-primary); }
+
+    .nav-cta {
+      background: var(--blue);
+      color: #0a0a0a;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--blue-light); transform: translateY(-1px); }
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text-secondary);
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 96px 48px 80px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--blue);
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+    .eyebrow-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--blue);
+      animation: pulse 2.2s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.85); }
+    }
+
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(36px, 5.5vw, 64px);
+      font-weight: 800;
+      line-height: 1.07;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+      max-width: 840px;
+      margin-bottom: 28px;
+    }
+    h1 em { font-style: normal; color: var(--blue); }
+
+    .hero-sub {
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      max-width: 560px;
+      margin-bottom: 44px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #0a0a0a;
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--blue-light); transform: translateY(-1px); }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-secondary);
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 400;
+      text-decoration: none;
+      display: inline-block;
+      border: 1px solid rgba(255,255,255,0.12);
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .btn-ghost:hover { color: var(--text-primary); border-color: rgba(255,255,255,0.3); }
+
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      margin-top: 64px;
+      padding-top: 48px;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 34px;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+    }
+    .stat-label {
+      font-size: 13px;
+      color: #444;
+      margin-top: 4px;
+      font-weight: 300;
+    }
+
+    /* ── SECTION WRAPPER ── */
+    .section {
+      padding: 80px 48px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0 48px;
+    }
+
+    .section-tag {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #444;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(24px, 3.5vw, 38px);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: var(--text-primary);
+      line-height: 1.14;
+      max-width: 620px;
+      margin-bottom: 44px;
+    }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      padding: 30px 26px;
+      transition: background 0.2s;
+    }
+    .service-card:hover { background: var(--bg-card-hover); }
+
+    .service-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: rgba(74,158,255,0.08);
+      border: 1px solid rgba(74,158,255,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .service-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: #e0ddd6;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+    }
+
+    .service-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+
+    .new-badge {
+      display: inline-block;
+      font-size: 9px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(74,158,255,0.12);
+      color: var(--blue);
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-weight: 600;
+      margin-left: 6px;
+      vertical-align: middle;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    /* ── WHO I WORK WITH ── */
+    .who-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    .who-text {
+      font-size: 17px;
+      color: #5a5a58;
+      line-height: 1.8;
+      font-weight: 300;
+    }
+    .who-text strong { color: #a0a09a; font-weight: 500; }
+
+    .targets { display: flex; flex-direction: column; gap: 10px; }
+
+    .target-pill {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg-card);
+      font-size: 14px;
+      color: #888;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .target-pill:hover { border-color: rgba(74,158,255,0.25); color: #b8b5ae; }
+
+    .target-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── HOW I WORK ── */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+    }
+
+    .step {
+      padding: 28px 22px;
+      border-left: 1px solid var(--border);
+    }
+    .step:first-child { border-left: none; padding-left: 0; }
+
+    .step-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #2a2a28;
+      margin-bottom: 14px;
+    }
+    .step-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #c8c5be;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+    }
+    .step-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    /* ── ABOUT ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 52px;
+      align-items: start;
+    }
+
+    .about-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      padding: 28px;
+      position: sticky;
+      top: 90px;
+    }
+
+    .avatar-wrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid rgba(74,158,255,0.35);
+      margin-bottom: 18px;
+      flex-shrink: 0;
+    }
+    .avatar-wrap img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    .about-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      margin-bottom: 3px;
+    }
+    .about-role { font-size: 13px; color: #484846; margin-bottom: 16px; }
+    .about-bio {
+      font-size: 13px;
+      color: #3e3e3c;
+      font-weight: 300;
+      line-height: 1.65;
+      margin-bottom: 22px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding-top: 16px;
+    }
+
+    .social-links { display: flex; flex-direction: column; gap: 8px; }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 13px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      text-decoration: none;
+      background: transparent;
+      transition: border-color 0.2s, background 0.2s;
+      cursor: pointer;
+    }
+    .social-btn:hover {
+      border-color: rgba(74,158,255,0.3);
+      background: rgba(74,158,255,0.04);
+    }
+    .social-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      border-radius: 4px;
+    }
+    .social-label { font-size: 13px; color: #888; }
+    .social-handle { font-size: 12px; color: #333; margin-left: auto; }
+
+    .about-badge {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .about-badge:last-child { border-bottom: none; }
+
+    .badge-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 7px;
+      background: rgba(74,158,255,0.07);
+      border: 1px solid rgba(74,158,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .badge-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: #b8b5ae;
+      margin-bottom: 5px;
+    }
+    .badge-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    /* ── FAQ ── */
+    .faq { max-width: 680px; }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 22px 0;
+    }
+    .faq-item:first-child { padding-top: 0; }
+
+    .faq-q {
+      font-family: 'Syne', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: #c8c5be;
+      margin-bottom: 9px;
+      letter-spacing: -0.01em;
+    }
+    .faq-a {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      font-weight: 300;
+    }
+    .faq-a em { font-style: normal; color: var(--blue); }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      margin: 0 48px 80px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 16px;
+      padding: 60px 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .cta-band h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(20px, 2.8vw, 30px);
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .cta-band p { font-size: 15px; color: #444; font-weight: 300; }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 28px 48px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-copy { font-size: 13px; color: #2a2a28; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a {
+      font-size: 13px;
+      color: #2a2a28;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: #555; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { padding: 18px 24px; }
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 65px; left: 0; right: 0;
+        background: rgba(10,10,10,0.97);
+        backdrop-filter: blur(12px);
+        padding: 24px;
+        gap: 20px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .hero { padding: 64px 24px 56px; }
+      h1 { font-size: clamp(30px, 8vw, 48px); }
+      .hero-sub { font-size: 16px; }
+      .hero-stats { gap: 28px; }
+
+      .section { padding: 56px 24px; }
+      .divider { margin: 0 24px; }
+
+      .services-grid { grid-template-columns: 1fr; }
+      .who-grid { grid-template-columns: 1fr; gap: 36px; }
+      .steps-grid { grid-template-columns: 1fr 1fr; }
+      .step { border-left: none; border-top: 1px solid var(--border); padding: 20px 0; }
+      .step:first-child { border-top: none; }
+
+      .about-grid { grid-template-columns: 1fr; gap: 36px; }
+      .about-card { position: static; }
+
+      .cta-band { margin: 0 24px 56px; padding: 40px 32px; flex-direction: column; align-items: flex-start; }
+      footer { padding: 24px; flex-direction: column; align-items: flex-start; }
+    }
+
+    @media (max-width: 560px) {
+      .steps-grid { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      .btn-primary, .btn-ghost { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav>
+    <a href="/" class="logo">Lean<span>Ops</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="mailto:hello@leanops.xyz" class="nav-cta">Get in touch →</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="eyebrow">
+      <span class="eyebrow-dot"></span>
+      Available for new engagements
+    </div>
+
+    <h1>Operational clarity for <em>Blockchain</em> and <em>AI</em> companies navigating complexity.</h1>
+
+    <p class="hero-sub">I work with founders and leadership teams in Web3, DeFi, and AI to cut through operational chaos — streamlining processes, reducing friction, and building just enough structure to scale without slowing down.</p>
+
+    <div class="hero-actions">
+      <a href="mailto:hello@leanops.xyz" class="btn-primary">Let's talk →</a>
+      <a href="#about" class="btn-ghost">About Milan</a>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">7+</div>
+        <div class="stat-label">Years inside blockchain &amp; tech orgs</div>
+      </div>
+      <div>
+        <div class="stat-num">1000+</div>
+        <div class="stat-label">Employee organisations navigated</div>
+      </div>
+      <div>
+        <div class="stat-num">Seed → Scale</div>
+        <div class="stat-label">Every stage of growth covered</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ── SERVICES ── -->
+  <section class="section" id="services">
+    <div class="section-tag">Services</div>
+    <div class="section-title">What I do</div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="#4a9eff" stroke-width="1.4"/><path d="M5.5 8H10.5M8 5.5V10.5" stroke="#4a9eff" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <div class="service-title">Operational clean-ups &amp; transitions</div>
+        <div class="service-desc">Blockchain and AI companies move fast and break things — including their own operations. I help teams regain structure and momentum during growth spurts, pivots, acquisitions, and reorgs.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" stroke="#4a9eff" stroke-width="1.3"/><rect x="9" y="2" width="5" height="5" rx="1" stroke="#4a9eff" stroke-width="1.3"/><rect x="2" y="9" width="5" height="5" rx="1" stroke="#4a9eff" stroke-width="1.3"/><rect x="9" y="9" width="5" height="5" rx="1" stroke="#4a9eff" stroke-width="1.3"/></svg>
+        </div>
+        <div class="service-title">Process simplification</div>
+        <div class="service-desc">Most fast-moving tech teams carry more process debt than they realise. I identify what's blocking execution, clarify ownership, and reduce the friction that quietly drains your team's energy.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 12L5 7L8.5 9.5L11 5L14 10" stroke="#4a9eff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="service-title">Cost &amp; efficiency reviews</div>
+        <div class="service-desc">Whether you're optimising a lean team or unwinding a bloated structure, I examine how money, time, and effort are being spent — and where simple changes unlock real gains.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 5V11L8 14L2 11V5L8 2Z" stroke="#4a9eff" stroke-width="1.3" stroke-linejoin="round"/><path d="M8 2V14M2 5L14 11M14 5L2 11" stroke="#4a9eff" stroke-width="1.3" stroke-linecap="round"/></svg>
+        </div>
+        <div class="service-title">Finance &amp; operations coordination</div>
+        <div class="service-desc">In crypto and AI, Finance, Legal, and Ops rarely speak the same language. I bridge that gap — facilitating smarter decisions and ensuring nothing falls between the teams.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8C3 5.2 5.2 3 8 3C10 3 11.8 4.1 12.7 5.8" stroke="#4a9eff" stroke-width="1.4" stroke-linecap="round"/><path d="M13 8C13 10.8 10.8 13 8 13C6 13 4.2 11.9 3.3 10.2" stroke="#4a9eff" stroke-width="1.4" stroke-linecap="round"/><path d="M11 4.5L13 6L14.5 4" stroke="#4a9eff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 11.5L3 10L1.5 12" stroke="#4a9eff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="service-title">AI &amp; automation integration <span class="new-badge">New</span></div>
+        <div class="service-desc">I help companies cut through the AI noise: identifying where automation genuinely saves time, implementing workflows that actually stick, and avoiding the trap of buying tools nobody uses.</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="6" r="3" stroke="#4a9eff" stroke-width="1.4"/><path d="M2 14C2 11.8 4.7 10 8 10C11.3 10 14 11.8 14 14" stroke="#4a9eff" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <div class="service-title">Fractional &amp; advisory ops support</div>
+        <div class="service-desc">Not every team needs a full-time COO. Short-term, hands-on support providing teams with additional operational capacity or clarity — stepping back when you've found your footing.</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ── WHO I WORK WITH ── -->
+  <section class="section">
+    <div class="section-tag">Who I work with</div>
+    <div class="section-title">Built for the companies where operations never came first.</div>
+
+    <div class="who-grid">
+      <div class="who-text">
+        <p>Blockchain protocols, DeFi platforms, AI product companies, and Web3 infrastructure teams share a common pattern: <strong>extraordinary technical ambition, and operations that had to catch up.</strong></p>
+        <br />
+        <p>Whether you're a 10-person AI startup that just closed a seed round, or a 200-person crypto organisation navigating a restructure — I bring the operational clarity that lets your team focus on building.</p>
+      </div>
+      <div class="targets">
+        <div class="target-pill"><span class="target-dot" style="background:#4a9eff;"></span>Blockchain protocols &amp; Layer 1/2 teams</div>
+        <div class="target-pill"><span class="target-dot" style="background:#4a9eff;"></span>DeFi platforms &amp; crypto exchanges</div>
+        <div class="target-pill"><span class="target-dot" style="background:#9b6dff;"></span>AI product companies &amp; LLM startups</div>
+        <div class="target-pill"><span class="target-dot" style="background:#9b6dff;"></span>AI infrastructure &amp; tooling companies</div>
+        <div class="target-pill"><span class="target-dot" style="background:#55c4a0;"></span>Web3 infrastructure &amp; dev tooling</div>
+        <div class="target-pill"><span class="target-dot" style="background:#55c4a0;"></span>Tech companies in transition or scaling</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ── HOW I WORK ── -->
+  <section class="section">
+    <div class="section-tag">Methodology</div>
+    <div class="section-title">How I work</div>
+
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-title">Understand before prescribing</div>
+        <div class="step-desc">I spend real time learning how your company actually operates — not how the org chart says it does. The real blockers are usually different from the stated ones.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-title">Prioritise ruthlessly</div>
+        <div class="step-desc">We identify the two or three issues genuinely slowing you down and work on those first. No 90-day transformation frameworks. No slide decks that sit in a folder.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-title">Solutions your team will actually use</div>
+        <div class="step-desc">Everything I design is built for real people under real pressure. Simple, clear, and practical — not impressive on paper but ignored in practice.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-title">Hands-on when it counts</div>
+        <div class="step-desc">I'm not an advisor who disappears after the kickoff call. I work alongside your team during implementation — especially during the hard parts.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <div class="step-title">Clear scope, honest communication</div>
+        <div class="step-desc">You'll always know what I'm working on, what it'll take, and what to expect. No surprises, no scope creep, no wasted time.</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ── ABOUT ── -->
+  <section class="section" id="about">
+    <div class="section-tag">About</div>
+    <div class="section-title">The person behind Lean Ops</div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="avatar-wrap">
+          <img src="data:image/jpeg;base64,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" alt="Milan Ilić — Operations Consultant" />
+        </div>
+        <div class="about-name">Milan Ilić</div>
+        <div class="about-role">Operations Consultant · Belgrade</div>
+        <div class="about-bio">Practical ops partner for founders navigating the moments that matter most — acquisitions, restructurings, rapid growth, and wind-downs. Now expanding to AI-native companies.</div>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/ilicmilan/" class="social-btn" target="_blank" rel="noopener">
+            <svg class="social-icon" viewBox="0 0 20 20" fill="none">
+              <rect width="20" height="20" rx="4" fill="#0A66C2"/>
+              <path d="M6.5 8H4.5V16H6.5V8Z" fill="white"/>
+              <circle cx="5.5" cy="5.75" r="1.25" fill="white"/>
+              <path d="M16 12C16 10.2 15 8.5 13 8.5C11.9 8.5 11.1 9 10.7 9.7V8H8.7V16H10.7V12C10.7 11.1 11.3 10.3 12.4 10.3C13.5 10.3 14 11.1 14 12V16H16V12Z" fill="white"/>
+            </svg>
+            <span class="social-label">LinkedIn</span>
+            <span class="social-handle">ilicmilan</span>
+          </a>
+          <a href="https://t.me/ilic013" class="social-btn" target="_blank" rel="noopener">
+            <svg class="social-icon" viewBox="0 0 20 20" fill="none">
+              <rect width="20" height="20" rx="4" fill="#26A5E4"/>
+              <path d="M4 9.8L15.5 5.2L13.5 15.8L8.5 12.2L6.8 13.8V11.2L12.8 6L7.5 10.8L4 9.8Z" fill="white"/>
+            </svg>
+            <span class="social-label">Telegram</span>
+            <span class="social-handle">ilic013</span>
+          </a>
+          <a href="mailto:hello@leanops.xyz" class="social-btn">
+            <svg class="social-icon" viewBox="0 0 20 20" fill="none">
+              <rect width="20" height="20" rx="4" fill="#1a1a1a" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <rect x="3.5" y="6" width="13" height="9" rx="1.5" stroke="#666" stroke-width="1.2" fill="none"/>
+              <path d="M3.5 7.5L10 11.5L16.5 7.5" stroke="#666" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+            <span class="social-label">Email</span>
+            <span class="social-handle">hello@leanops.xyz</span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="about-badge">
+          <div class="badge-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="#4a9eff" stroke-width="1.4"/><path d="M8 5.5V8.5L9.8 10" stroke="#4a9eff" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="badge-title">7+ years inside real companies</div>
+            <div class="badge-desc">Hands-on experience since 2018 working within blockchain and technology organizations — embedded in day-to-day operations rather than advising from the outside.</div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <div class="badge-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 13L8 3L14 13H2Z" stroke="#4a9eff" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="badge-title">Experience with complexity at scale</div>
+            <div class="badge-desc">Working with both lean teams and organizations with 1,000+ employees — understanding how decision-making, communication, and accountability change as companies grow.</div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <div class="badge-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#4a9eff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="badge-title">Turning acquisitions into functioning teams</div>
+            <div class="badge-desc">Direct involvement in setting up acquired teams so they actually work in practice — from offices and contracts to tooling, purchasing, and documentation. Getting teams operational quickly and creating early internal structure.</div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <div class="badge-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2L9.6 6H14L10.7 8.6L11.9 13L8 10.5L4.1 13L5.3 8.6L2 6H6.4L8 2Z" stroke="#4a9eff" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="badge-title">Navigating hard transitions</div>
+            <div class="badge-desc">Hands-on support during the most demanding phases: integrating teams after acquihires, aligning founders and leadership, defining KPIs that stick, simplifying operations during downsizing or wind-downs, and setting up brand protection procedures.</div>
+          </div>
+        </div>
+        <div class="about-badge">
+          <div class="badge-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="#4a9eff" stroke-width="1.3"/><path d="M5 8H11M8 5V11" stroke="#4a9eff" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="badge-title">Now: AI-native companies</div>
+            <div class="badge-desc">The operational challenges facing a DeFi protocol in 2019 and an AI product company in 2025 are more similar than most people expect: fast-moving, under-structured, and in urgent need of someone who can translate between the technical vision and business reality.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ── FAQ ── -->
+  <section class="section" id="faq">
+    <div class="section-tag">FAQ</div>
+    <div class="section-title">Common questions</div>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">What kind of companies do you work with?</div>
+        <div class="faq-a">Primarily blockchain, Web3, DeFi, and AI product companies — from early-stage startups to organizations with 100–500+ employees. I'm most useful when operational complexity is outpacing internal capacity.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Are you a fractional COO?</div>
+        <div class="faq-a">Sometimes that's the right label, sometimes not. I work in whatever capacity makes sense: short-term project-based engagements, ongoing advisory, or embedded part-time support during a specific transition.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Are you open to full-time roles?</div>
+        <div class="faq-a">Occasionally, yes — for the right company and challenge. If you're looking for someone fully embedded, fully committed, and not split across multiple clients, that conversation is worth having. <em>Full-time means your team gets all of my attention, all of the time.</em> Reach out and let's see if it's a fit.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you work remotely?</div>
+        <div class="faq-a">Yes — I work with distributed teams across time zones. Most of my clients operate globally by nature.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How quickly can you start?</div>
+        <div class="faq-a">Usually within 1–2 weeks of an initial conversation. For urgent situations, often faster.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What's your pricing model?</div>
+        <div class="faq-a">Engagements are scoped and priced per project or on a monthly retainer basis, depending on what makes sense. We discuss this in the initial call — there's no fixed price list because every situation is different.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BAND ── -->
+  <div class="cta-band">
+    <div>
+      <h2>Ready to cut through the complexity?</h2>
+      <p>If you'd like to discuss a potential engagement, reach out — hello@leanops.xyz</p>
+    </div>
+    <a href="mailto:hello@leanops.xyz" class="btn-primary">Let's talk →</a>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-copy">© 2025 Lean Ops · hello@leanops.xyz</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ilicmilan/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://t.me/ilic013" target="_blank" rel="noopener">Telegram</a>
+      <a href="mailto:hello@leanops.xyz">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  </script>
+
+</body>
+</html>
