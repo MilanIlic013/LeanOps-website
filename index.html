@@ -333,7 +333,7 @@
     .about-photo { margin: 0; position: relative; max-width: 340px; }
     .about-photo::before {
       content: ""; position: absolute; z-index: 0;
-      inset: 24px -24px -24px 24px;
+      inset: 24px -24px 0 24px;
       border-radius: calc(var(--radius) + 10px);
       background: var(--accent-tint);
     }
@@ -345,7 +345,7 @@
       border: 1px solid var(--line);
       background: var(--surface-2);
     }
-    .about-photo figcaption { position: relative; z-index: 1; padding: 16px 4px 0; display: grid; }
+    .about-photo figcaption { position: relative; z-index: 1; padding: 18px 16px 22px 44px; display: grid; }
     .profile-name { font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; }
     .profile-role { font-size: 14px; color: var(--muted); }
     .availability {
@@ -616,7 +616,9 @@
       .menu-btn { display: inline-flex; }
       .hero-grid, .who-grid, .method-grid, .about-top, .faq-grid, .now { grid-template-columns: minmax(0, 1fr); }
       .engage-card { justify-self: start; }
-      .engage-card::before, .about-photo::before { inset: 20px -16px -16px 20px; }
+      .engage-card::before { inset: 20px -16px -16px 20px; }
+      .about-photo::before { inset: 20px -16px 0 20px; }
+      .about-photo figcaption { padding: 16px 12px 18px 36px; }
       .about-photo { max-width: 300px; }
       .method-intro { position: static; }
       .hero-canvas {
