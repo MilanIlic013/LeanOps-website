@@ -300,21 +300,26 @@
     }
     .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
-    .engage-card {
+    /* Backdrop lives on a wrapper so it always paints behind the card,
+       including while the reveal transform is running. */
+    .engage-wrap {
       position: relative;
+      max-width: 380px; width: 100%;
+      justify-self: end;
+    }
+    .engage-wrap::before {
+      content: ""; position: absolute; z-index: 0;
+      inset: 24px -24px -24px 24px;
+      border-radius: calc(var(--radius) + 10px);
+      background: var(--accent-tint);
+    }
+    .engage-card {
+      position: relative; z-index: 1;
       background: var(--surface);
       border: 1px solid var(--line);
       border-radius: calc(var(--radius) + 6px);
       padding: 28px;
       box-shadow: var(--shadow-lg);
-      max-width: 380px; width: 100%;
-      justify-self: end;
-    }
-    .engage-card::before {
-      content: ""; position: absolute; z-index: -1;
-      inset: 24px -24px -24px 24px;
-      border-radius: calc(var(--radius) + 10px);
-      background: var(--accent-tint);
     }
     .engage-title { font-size: 20px; font-weight: 600; letter-spacing: -0.015em; margin: 22px 0 6px; }
     .engage-list { list-style: none; display: grid; }
@@ -615,8 +620,8 @@
       .nav-links, .nav-right .btn { display: none; }
       .menu-btn { display: inline-flex; }
       .hero-grid, .who-grid, .method-grid, .about-top, .faq-grid, .now { grid-template-columns: minmax(0, 1fr); }
-      .engage-card { justify-self: start; }
-      .engage-card::before { inset: 20px -16px -16px 20px; }
+      .engage-wrap { justify-self: start; }
+      .engage-wrap::before { inset: 20px -16px -16px 20px; }
       .about-photo::before { inset: 20px -16px 0 20px; }
       .about-photo figcaption { padding: 16px 12px 18px 36px; }
       .about-photo { max-width: 300px; }
@@ -688,7 +693,8 @@
           </div>
         </div>
 
-        <aside class="engage-card reveal" style="--i:2" aria-labelledby="engage-title">
+        <div class="engage-wrap reveal" style="--i:2">
+        <aside class="engage-card" aria-labelledby="engage-title">
           <span class="availability"><span class="availability-dot" aria-hidden="true"></span>Available for new engagements</span>
           <h2 id="engage-title" class="engage-title">How engagements work</h2>
           <ul class="engage-list">
@@ -697,6 +703,7 @@
             <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm88,104a87.62,87.62,0,0,1-6.4,32.94l-44.7-27.49a15.92,15.92,0,0,0-6.24-2.23l-22.82-3.08a16.11,16.11,0,0,0-16,7.86h-8.72l-3.8-7.86a15.91,15.91,0,0,0-11-8.67l-8-1.73L96.14,104h16.71a16.06,16.06,0,0,0,7.73-2l12.25-6.76a16.62,16.62,0,0,0,3-2.14l26.91-24.34A15.93,15.93,0,0,0,166,49.1l-.36-.65A88.11,88.11,0,0,1,216,128ZM143.31,41.34,152,56.9,125.09,81.24,112.85,88H96.14a16,16,0,0,0-13.88,8l-8.73,15.23L63.38,84.19,74.32,58.32a87.87,87.87,0,0,1,69-17ZM40,128a87.53,87.53,0,0,1,8.54-37.8l11.34,30.27a16,16,0,0,0,11.62,10l21.43,4.61L96.74,143a16.09,16.09,0,0,0,14.4,9h1.48l-7.23,16.23a16,16,0,0,0,2.86,17.37l.14.14L128,205.94l-1.94,10A88.11,88.11,0,0,1,40,128Zm102.58,86.78,1.13-5.81a16.09,16.09,0,0,0-4-13.9,1.85,1.85,0,0,1-.14-.14L120,174.74,133.7,144l22.82,3.08,45.72,28.12A88.18,88.18,0,0,1,142.58,214.78Z"/></svg><div><strong>Fully remote</strong><span>Distributed teams across time zones</span></div></li>
           </ul>
         </aside>
+        </div>
       </div>
     </section>
 
@@ -704,7 +711,7 @@
     <section class="proof" aria-label="Experience at a glance">
       <div class="wrap proof-grid">
         <div class="proof-item reveal">
-          <div class="proof-num">7<span>+</span></div>
+          <div class="proof-num">8<span>+</span></div>
           <div class="proof-label">Years inside blockchain &amp; tech orgs</div>
         </div>
         <div class="proof-item reveal" style="--i:1">
@@ -872,7 +879,7 @@
           <article class="exp reveal">
             <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M136,80v43.47l36.12,21.67a8,8,0,0,1-8.24,13.72l-40-24A8,8,0,0,1,120,128V80a8,8,0,0,1,16,0Zm-8-48A95.44,95.44,0,0,0,60.08,60.15C52.81,67.51,46.35,74.59,40,82V64a8,8,0,0,0-16,0v40a8,8,0,0,0,8,8H72a8,8,0,0,0,0-16H49c7.15-8.42,14.27-16.35,22.39-24.57a80,80,0,1,1,1.66,114.75,8,8,0,1,0-11,11.64A96,96,0,1,0,128,32Z"/></svg>
             <div>
-              <h3>7+ years inside real companies</h3>
+              <h3>8+ years inside real companies</h3>
               <p>Hands-on experience since 2018 working within blockchain and technology organizations, embedded in day-to-day operations rather than advising from the outside.</p>
             </div>
           </article>
